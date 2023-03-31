@@ -1,0 +1,44 @@
+[
+	{
+		"id": "2",
+		"nombre": "Myrna",
+		"apellido": "Flores",
+		"sueldo": 25000,
+		"categoria": "SSR"
+	},
+	{
+		"id": "3",
+		"nombre": "Armando",
+		"apellido": "Mendoza",
+		"sueldo": 31000,
+		"categoria": "SR"
+	},
+	{
+		"id": "4",
+		"nombre": "Dania",
+		"apellido": "Gómez",
+		"sueldo": 45000,
+		"categoria": "TL"
+	},
+	{
+		"id": "5",
+		"nombre": "Lucia",
+		"apellido": "Ferreri",
+		"sueldo": 45000,
+		"categoria": "TL"
+	},
+	{
+		"id": "6",
+		"nombre": "Herminio",
+		"apellido": "Fuentes",
+		"sueldo": 18000,
+		"categoria": "JR"
+	},
+	{
+		"nombre": "_Luis",
+		"apellido": "_Bida",
+		"sueldo": "_45000",
+		"categoria": "_SR",
+		"id": 7
+	}
+]

@@ -1,6 +1,6 @@
 # 51185 Ejercicios en clase
 
-Con el comando:
+Con el comando:  
 
 ```
 $ git clone https://github.com/Bidabehere/51185.git

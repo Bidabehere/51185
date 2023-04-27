@@ -3,7 +3,7 @@ import estudianteRouter from './routes/estudiante.route.js';
 import mongoose from 'mongoose';
 
 const PORT = 8080;
-const MONGO = 'mongodb+srv://bidabehere:bidabehere@cluster0.a5dcy.mongodb.net/?retryWrites=true&w=majority';
+const MONGO = 'URL MONGO';
 
 
 const app = express();

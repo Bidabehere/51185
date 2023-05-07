@@ -1,0 +1,20 @@
+
+Fecha: 3/5/2023 - Hora: 20:54:14 - Metodo: GET
+Fecha: 3/5/2023 - Hora: 20:54:24 - Metodo: GET
+Fecha: 3/5/2023 - Hora: 20:55:16 - Metodo: POST
+Fecha: 3/5/2023 - Hora: 21:25:33 - Metodo: POST
+Fecha: 3/5/2023 - Hora: 21:25:59 - Metodo: POST
+Fecha: 3/5/2023 - Hora: 21:27:11 - Metodo: Alta usuario
+Fecha: 3/5/2023 - Hora: 21:33:15 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:33:48 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:34:21 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:39:11 - Metodo: Consulta un solo usuario
+Fecha: 3/5/2023 - Hora: 21:42:32 - Metodo: Elimina un usuario
+Fecha: 3/5/2023 - Hora: 21:42:45 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:47:38 - Metodo: Actualiza un usuario
+Fecha: 3/5/2023 - Hora: 21:47:53 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:48:34 - Metodo: Actualiza un usuario
+Fecha: 3/5/2023 - Hora: 21:48:45 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:49:34 - Metodo: Consulta todos los usuarios
+Fecha: 3/5/2023 - Hora: 21:49:43 - Metodo: Actualiza un usuario
+Fecha: 3/5/2023 - Hora: 21:49:47 - Metodo: Consulta todos los usuarios

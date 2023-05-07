@@ -20,9 +20,10 @@ const schema = new mongoose.Schema({
         require:true,
         unique:true
     },
-    curso:{
+    cursos:{
         type:String,
-        require:true
+        require:true,
+        curso: [{nombre:String, horario:String}]
     },
     nota:{
         type:Number,

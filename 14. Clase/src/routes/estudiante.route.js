@@ -106,17 +106,31 @@ router.post('/', async (req,res)=>{
         curso,
         nota
     }
+    try {
+      
+      const result = await estudianteModel.create(estudiante)
+      res.send({result})
 
-    const result = await estudianteModel.create(estudiante)
+    } catch (error) {
 
-    res.send({result})
+      res.send({error})
+      
+    }
+
 })
 
 router.put('/:sid', async (req,res)=>{
     const id = req.params.sid;
+    
     const UpdateEstudiante = req.body;
+
+    const carrito = await estudianteModel.find({_id:id}); 
+
+   
     const result = await estudianteModel.updateOne({_id:id},{$set:UpdateEstudiante});
+   
     res.send(result)
+
 })
 
 router.delete('/:sid', async (req,res)=>{

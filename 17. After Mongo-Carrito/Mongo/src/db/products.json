@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "title": "joker",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc01",
+        "price": 4500,
+        "status": true,
+        "stock": 200,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 3,
+        "title": "lapices de colores",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc03",
+        "price": 3000,
+        "status": true,
+        "stock": 220,
+        "category": "wooden puzzles",
+        "thumbnail": []
+    },
+    {
+        "id": 4,
+        "title": "leon multicolor",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc04",
+        "price": 4000,
+        "status": true,
+        "stock": 500,
+        "category": "cardboard puzzles",
+        "thumbnail": []
+    },
+    {
+        "id": 5,
+        "title": "gradientes",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc05",
+        "price": 3500,
+        "status": true,
+        "stock": 200,
+        "category": "cardboard puzzles",
+        "thumbnail": []
+    },
+    {
+        "id": 6,
+        "title": "catrina",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc06",
+        "price": 6000,
+        "status": true,
+        "stock": 500,
+        "category": "cardboard puzzles",
+        "thumbnail": []
+    },
+    {
+        "id": 7,
+        "title": "fangio",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc07",
+        "price": 4500,
+        "status": true,
+        "stock": 200,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 8,
+        "title": "fangio",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc08",
+        "price": 4500,
+        "status": true,
+        "stock": 200,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 9,
+        "title": "senna",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc09",
+        "price": 4500,
+        "status": true,
+        "stock": 120,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 10,
+        "title": "schumacher",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc10",
+        "price": 4500,
+        "status": true,
+        "stock": 120,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 11,
+        "title": "gatitos",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc11",
+        "price": 3500,
+        "status": true,
+        "stock": 250,
+        "category": "cardboard puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 12,
+        "title": "perritos",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc12",
+        "price": 3650,
+        "status": true,
+        "stock": 90,
+        "category": "cardboard puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 13,
+        "title": "alicia en el país de las maravillas",
+        "description": "Machine cut, classic shape, cardboard puzzle.",
+        "code": "abc13",
+        "price": 6700,
+        "status": true,
+        "stock": 20,
+        "category": "cardboard puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 14,
+        "title": "van gogh",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc14",
+        "price": 4500,
+        "status": true,
+        "stock": 200,
+        "category": "wooden puzzles",
+        "thumbnails": []
+    },
+    {
+        "id": 15,
+        "title": "lalaland",
+        "description": "Hand designed, laser cut, non classic shape, wooden puzzle.",
+        "code": "abc15",
+        "price": 5200,
+        "status": true,
+        "stock": 150,
+        "cateogry": "wooden puzzles",
+        "thumbnails": []
+    }
+]

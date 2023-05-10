@@ -26,7 +26,6 @@ router.post('/', async(request, response) => {
 
 router.post('/:cid/product/:pid', async (request, response) => {
     const cid = request.params.cid;
-
     const pid = request.params.pid;
 
     const respuesta = await cartManagerMongo.updateCart(cid, pid);

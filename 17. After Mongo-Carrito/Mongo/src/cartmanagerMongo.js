@@ -38,10 +38,13 @@ class CartManagerMongo{
     };
 
     async updateCart(cid, pid){
-
+ 
         const cart = await cartModel.findOne({_id:cid})
-        const prodIndex = cart.products.findIndex(cprod => cprod._id === cid);
-       
+
+        const prodIndex = cart.products.findIndex(u=>u._id === pid);
+
+        
+       // console.log(prodIndex);
         if (prodIndex === -1){
             const product = {
                 _id: pid,

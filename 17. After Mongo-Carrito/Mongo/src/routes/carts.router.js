@@ -36,6 +36,18 @@ router.post('/:cid/product/:pid', async (request, response) => {
     });
 });
 
+router.delete('/:cid/product/:pid', async (request, response) => {
+    const cid = request.params.cid;
+    const pid = request.params.pid;
+
+    const respuesta = await cartManagerMongo.deleteProductCart(cid, pid);
+
+    response.status(respuesta.code).send({
+        status: respuesta.status,
+        message: respuesta.message
+    });
+});
+
 router.get('/', async(request, response) => {
 
     const respuesta = await cartManagerMongo.getCarts();

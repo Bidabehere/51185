@@ -66,6 +66,35 @@ class CartManagerMongo{
         };
 
     };
+
+    async deleteProductCart(cid, pid){
+ 
+        const cart = await cartModel.findOne({_id:cid})
+
+        const prodIndex = cart.products.findIndex(u=>u._id === pid);
+
+        
+       // console.log(prodIndex);
+        if (prodIndex === -1){
+            //
+        } 
+        else {
+            //let total = cart.products[prodIndex].quantity;
+            cart.products.splice(prodIndex,1)
+        }
+
+        const result = await cartModel.updateOne({_id:cid},{$set:cart})
+        
+        return {
+            code: 202,
+            status: 'Success',
+            message: cart.products
+        };
+
+    };
+
+
+    
     async getCarts(){
         
         const carts = await cartModel.find();

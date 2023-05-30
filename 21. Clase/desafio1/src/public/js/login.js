@@ -1,21 +1,17 @@
-const form = document.getElementById("loginForm");
+const form = document.getElementById('loginForm');
 
-form.addEventListener('submit', e =>{
+form.addEventListener('submit',e=>{
     e.preventDefault();
-
     const data = new FormData(form);
-
     const obj = {};
-
-    data.forEach((value,key) => obj[key]=value)
-
+    data.forEach((value,key)=>obj[key]=value);
     fetch('/api/login',{
-        method: 'POST',
-        body: JSON.stringify(obj),
-        headers: {
-            'Content-Type': 'application/json'
+        method:'POST',
+        body:JSON.stringify(obj),
+        headers:{
+            'Content-Type':'application/json'
         }
-    }).then(result=>result.json()).then(json =>{
-        localStorage.setItem('token', json.acces_token)
+    }).then(result=>result.json()).then(json=>{
+        localStorage.setItem('token',json.access_token)
     })
 })

@@ -1,0 +1,19 @@
+body{
+    margin:0;
+}
+nav{
+    width:100%;
+    background-color: blueviolet;
+    color:white;
+    height: 30px;
+}
+footer{
+    width:100%;
+    background-color: black;
+    color:white;
+    height: 15px;
+}
+span a{
+    padding:5px;
+    color:white;
+}

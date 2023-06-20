@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "title": "Botines de fútbol",
+    "description": "Estos botines de fútbol tienen una suela especial para mayor tracción en terrenos de césped natural y artificial.",
+    "price": 54,
+    "thumbnail": "https://example.com/botines.jpg",
+    "code": "BF-002",
+    "stock": 30,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 2,
+    "title": "Cámara deportiva",
+    "description": "Esta cámara deportiva te permite grabar tus aventuras en alta definición y resistente a golpes y agua.",
+    "price": 129.99,
+    "thumbnail": "https://example.com/camara.jpg",
+    "code": "CD-003",
+    "stock": 15,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 3,
+    "title": "Auriculares inalámbricos",
+    "description": "Estos auriculares inalámbricos tienen un diseño ergonómico y te permiten disfrutar de tu música favorita sin cables molestos.",
+    "price": 49.99,
+    "thumbnail": "https://example.com/auriculares.jpg",
+    "code": "AI-004",
+    "stock": 50,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 4,
+    "title": "Teclado mecánico para gaming",
+    "description": "Este teclado mecánico para gaming tiene teclas retroiluminadas y un diseño resistente para largas sesiones de juego.",
+    "price": 89.99,
+    "thumbnail": "https://example.com/teclado.jpg",
+    "code": "TG-005",
+    "stock": 10,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 5,
+    "title": "Smart TV",
+    "description": "Este Smart TV de 55 pulgadas tiene resolución 4K y te permite acceder a tus aplicaciones de streaming favoritas.",
+    "price": 699.99,
+    "thumbnail": "https://example.com/smarttv.jpg",
+    "code": "ST-006",
+    "stock": 5,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 6,
+    "title": "Impresora láser",
+    "description": "Esta impresora láser de alta velocidad te permite imprimir documentos con calidad profesional desde cualquier dispositivo.",
+    "price": 299.99,
+    "thumbnail": "https://example.com/impresora.jpg",
+    "code": "IL-007",
+    "stock": 8,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 7,
+    "title": "Tablet",
+    "description": "Esta tablet tiene una pantalla de 10 pulgadas y te permite trabajar, jugar y navegar por Internet desde cualquier lugar.",
+    "price": 249.99,
+    "thumbnail": "https://example.com/tablet.jpg",
+    "code": "TB-009",
+    "stock": 20,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 8,
+    "title": "Bicicleta de montaña",
+    "description": "Esta bicicleta de montaña tiene una estructura de aluminio y un sistema de cambios de alta calidad para un mejor desempeño en los terrenos difíciles.",
+    "price": 699.99,
+    "thumbnail": "https://example.com/bicicleta.jpg",
+    "code": "BM-010",
+    "stock": 4,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 9,
+    "title": "Cámara de seguridad",
+    "description": "Esta cámara de seguridad de alta definición te permite monitorear tu hogar o negocio en tiempo real desde tu teléfono móvil.",
+    "price": 129.99,
+    "thumbnail": "https://example.com/camara.jpg",
+    "code": "CS-011",
+    "stock": 6,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 10,
+    "title": "Altavoz Bluetooth",
+    "description": "Este altavoz Bluetooth de alta fidelidad te permite disfrutar de tu música favorita con una calidad de sonido excepcional y una batería de larga duración.",
+    "price": 149.99,
+    "thumbnail": "https://example.com/altavoz.jpg",
+    "code": "AB-015",
+    "stock": 9,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 11,
+    "title": "Balón de fútbol",
+    "description": "Balón de fútbol de alta calidad con superficie de cuero sintético y costuras reforzadas.",
+    "price": 29.99,
+    "thumbnail": "https://example.com/images/balon-futbol.jpg",
+    "code": "BF001",
+    "stock": 18,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 12,
+    "title": "Raqueta de tenis",
+    "description": "Raqueta de tenis de carbono con agarre cómodo y resistente y marco ligero y duradero.",
+    "price": 89.99,
+    "thumbnail": "https://example.com/images/raqueta-tenis.jpg",
+    "code": "RT002",
+    "stock": 11,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 13,
+    "title": "Calcetines de running",
+    "description": "Calcetines de running transpirables y cómodos con soporte de arco y amortiguación en el talón y la punta.",
+    "price": 9.99,
+    "thumbnail": "https://example.com/images/calcetines-running.jpg",
+    "code": "CR003",
+    "stock": 11,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 14,
+    "title": "Guantes de boxeo",
+    "description": "Guantes de boxeo de cuero sintético con acolchado de espuma y cierre de velcro para un ajuste seguro.",
+    "price": 49.99,
+    "thumbnail": "https://example.com/images/guantes-boxeo.jpg",
+    "code": "GB004",
+    "stock": 5,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 15,
+    "title": "Casco de ciclismo",
+    "description": "Casco de ciclismo con diseño aerodinámico y ventilación para mayor comodidad. Fabricado con materiales de alta calidad y ajustable para un ajuste personalizado.",
+    "price": 79.99,
+    "thumbnail": "https://example.com/images/casco-ciclismo.jpg",
+    "code": "CC001",
+    "stock": 0,
+    "status": true,
+    "category": "Deportes"
+  },
+  {
+    "id": 16,
+    "title": "Cargador portátil",
+    "description": "Este cargador portátil te permite cargar tus dispositivos móviles en c…",
+    "price": 49.99,
+    "thumbnail": "https://example.com/cargador.jpg",
+    "code": "CP-020",
+    "stock": 0,
+    "status": true,
+    "category": "Tecnología"
+  },
+  {
+    "id": 17,
+    "title": "Vestido floreado",
+    "description": "Vestido corto con estampado floral",
+    "price": 45.99,
+    "thumbnail": "https://example.com/vestido.jpg",
+    "code": "VSD01",
+    "stock": 15,
+    "status": true,
+    "category": "Ropa"
+  },
+  {
+    "id": 18,
+    "title": "Chaqueta de cuero",
+    "description": "Chaqueta de cuero para mujer",
+    "price": 89.99,
+    "thumbnail": "https://example.com/chaqueta-cuero.jpg",
+    "code": "CQC01",
+    "stock": 10,
+    "status": true,
+    "category": "Ropa"
+  },
+  {
+    "id": 19,
+    "title": "Jeans ajustados",
+    "description": "Pantalones jeans ajustados para hombre",
+    "price": 55.99,
+    "thumbnail": "https://example.com/jeans.jpg",
+    "code": "JNS01",
+    "stock": 20,
+    "status": true,
+    "category": "Ropa"
+  },
+  {
+    "id": 20,
+    "title": "Vestido de noche",
+    "description": "Vestido largo para eventos especiales",
+    "price": 99.99,
+    "thumbnail": "https://example.com/vestido-noche.jpg",
+    "code": "VSN01",
+    "stock": 5,
+    "status": true,
+    "category": "Ropa"
+  },
+  {
+    "id": 21,
+    "title": "Blusa de seda",
+    "description": "Blusa de seda para mujer",
+    "price": 65.99,
+    "thumbnail": "https://example.com/blusa.jpg",
+    "code": "BLS01",
+    "stock": 25,
+    "status": true,
+    "category": "Ropa"
+  }
+]

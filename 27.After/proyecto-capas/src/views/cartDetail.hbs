@@ -1,0 +1,17 @@
+<h1>Vista del carrito</h1>
+{{#if _id}}
+    {{#if products}}
+        <h2>Listado de productos agregados</h2>
+        {{#each products}}
+            <div style="background:aquamarine">
+                <p>{{this.id.title}}</p>
+                <p>Cantidad: {{this.quantity}}</p>
+            </div>
+        {{/each}}
+    {{else}}
+        No hay productos en el carrito
+    {{/if}}
+{{else}}
+    <p>No hay detalles</p>
+{{/if}}
+<script src="/js/cart.js"></script>

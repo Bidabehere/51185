@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { businessCollection } from "../../constants.js";
+import { businessCollection } from "../../constants/index.js";
 
 
 const businessSchema = new mongoose.Schema({
@@ -7,4 +7,4 @@ const businessSchema = new mongoose.Schema({
     productos:[]
 })
 
-export const businessModel = mongoose.model(businessCollection, businessModel);
+export const businessModel = mongoose.model(businessCollection, businessSchema);

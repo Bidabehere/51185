@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { ordersCollection, usersCollection } from "../../constants.js";
+import { ordersCollection, usersCollection } from "../../constants/index.js";
 
 const userSchema = new mongoose.Schema({
     nombre: String,

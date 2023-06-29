@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { businessCollection, usersCollection,ordersCollection } from "../../constants.js";
+import { businessCollection, usersCollection,ordersCollection } from "../../constants/index.js";
 
 
 const ordersSchema = new mongoose.Schema({

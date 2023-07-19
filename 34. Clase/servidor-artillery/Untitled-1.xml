@@ -1,0 +1,1 @@
+"<fetch top=\"1\">\n  <entity name=\"account\">\n    <filter>\n      <condition attribute=\"accountnumber\" operator=\"eq\" value=\"a86e0a11-bf19-ee11-8f6d-000d3a88fc96\" />\n    </filter>\n  </entity>\n</fetch>"

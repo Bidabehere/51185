@@ -1,0 +1,13 @@
+<h2>Pagina de login</h2>
+{{message}}
+<form method="post" action="/api/sessions/login">
+    <input type="email" placeholder="correo" name="email"/>
+    <br/><br/>
+    <input type="password" placeholder="contraseña" name="password"/>
+    <br/><br/>
+    <button type="submit">Iniciar sesion</button>
+</form>
+<hr>
+<a href="/forgot-password">
+    <button>Restablecer constraseña</button>
+</a>

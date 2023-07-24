@@ -1,4 +1,3 @@
-const MONGO_URL = ''
 
 export default {
     mongo:{

@@ -1,5 +1,21 @@
 import * as dotenv from "dotenv";
-dotenv.config();
+import { __dirname } from "../utils.js";
+import path from "path";
+import {Command} from "commander";
+
+const program = new Command();
+
+program
+.option("-mode <modo>", "Modo de inicio","dev") 
+program.parse(); // Se cierra la configuracion
+
+const environment = program.opts();
+
+console.log(environment);
+
+const pathEnvironment = environment.Mode === "prod" ? path.join(__dirname, "../.env.production") : path.join(__dirname, "../.env.development");
+
+dotenv.config({path: pathEnvironment});
 
 export const options = {
     server:{

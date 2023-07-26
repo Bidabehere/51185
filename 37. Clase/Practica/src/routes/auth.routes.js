@@ -1,5 +1,8 @@
 import {Router} from "express";
 import passport from "passport";
+import { UserModel } from "../daos/models/user.model.js";
+import {sendRecoveryPass} from "../utils/email.js"
+import { createHash, isValidPassword, generateEmailToken, verifyEmailToken } from "../utils.js";
 
 
 const router = Router();
@@ -33,6 +36,50 @@ router.post("/logout",(req,res)=>{
     });
 });
 
+router.post("/forgot-password",async (req,res)=>{
+    try {
+        const { email } = req.body;
+        //verifico si existe
+        const user = await UserModel.findOne({email:email})
+        if(!user){
+            return res.send(`<div>Error, <a href="/forgot-password">Intente de nuevo</a></div>`)
+        }
+        const token = generateEmailToken(email,3*60);
+        await sendRecoveryPass(email,token);
+        res.send("Se envio un correo a su cuenta para restablecer la contraseña, volver  <a href='/login'>al login</a>")
+    } catch (error) {
+        return res.send(`<div>Error, <a href="/forgot-password">Intente de nuevo</a></div>`)
+
+    }
+});
+
+router.post("/reset-password", async (req,res)=>{
+    try {
+           const token = req.query.token;
+           const {email,newPassword}=req.body;
+           //validamos el token
+           const validEmail = verifyEmailToken(token) 
+           if(!validEmail){
+            return res.send(`El enlace ya no es valido, genere uno nuevo: <a href="/forgot-password">Nuevo enlace</a>.`)
+           }
+           const user = await UserModel.findOne({email:email});
+           if(!user){
+            return res.send("El usuario no esta registrado.")
+           }
+           if(isValidPassword(newPassword,user)){
+            return res.send("No puedes usar la misma contraseña.")
+           }
+           const userData = {
+            ...user._doc,
+            password:createHash(newPassword)
+           };
+           const userUpdate = await UserModel.findOneAndUpdate({email:email},userData);
+           res.render("login",{message:"contraseña actualizada"})
+
+    } catch (error) {
+        res.send(error.message)
+    }
+});
 
 
 export { router as authRouter};

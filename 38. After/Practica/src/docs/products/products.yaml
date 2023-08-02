@@ -1,0 +1,43 @@
+paths:
+  /api/products/:
+    get:
+      summary: Obtengo todos los productos
+      tags:
+        - Productos
+      responses:
+        "200":
+          description: Los productos se obtuvieron de forma correcta.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Products"
+        "500":
+          description: Error interno del servidor.
+
+components:
+  schemas:
+    Products:
+      type: object
+      properties:
+        title: 
+          type: string
+          description: Titulo
+        price: 
+          type: number
+          description: Precio
+        code: 
+          type: string
+          desciption: Codigo de producto
+        stock: 
+          type: Number
+          description: Cantidad de productos disponibles
+        category: 
+          type: string
+          description: Categoria
+        owner: 
+          type: ObjectId
+          description: Creador del producto
+
+  

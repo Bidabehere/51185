@@ -1,0 +1,93 @@
+paths:
+  /api/pets/:
+    get:
+      summary: Obtener todas las mascotas
+      tags:
+        - Pets
+      responses:
+        "200":
+          description: Las mascotas se obtuvieron de forma correcta
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#components/schemas/Pet"
+        "500":
+          description: Error interno del servidor
+    post:
+      summary: Crear mascota
+      tags:
+        - Pets
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#components/requestBodies/UpdatePet"
+      responses:
+        "200":
+          description: La mascota se creo de forma correcta
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  payload:
+                    $ref: "#components/schemas/Pet"
+        "500":
+          description: Error interno del servidor
+
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: id de la mascota
+        name:
+          type: string
+          description: nombre de la mascota
+        specie:
+          type: string
+          description: especie de la mascota
+        birthDate:
+          type: string
+          description: fecha de nacimientos de la mascota
+        adopted:
+          type: boolean
+          description: indica si la mascota fue adoptada
+        owner:
+          type: ObjectId
+          description: id del propietario
+        image:
+          type: string
+          description: foto de la mascota
+      example:
+        _id: ObjectId("gsa98273skjhgda8912")
+        name: toby
+        specie: perro
+        birthDate: 12/10/2020
+        adopted: true
+        owner: ObjectId("gsa98273skjhkjhgasd12")
+        image: "http:www.images.com/perrito.jpg"
+  requestBodies:
+    UpdatePet:
+      type: object
+      properties:
+        name:
+          type: string
+          description: nombre de la mascota
+        specie:
+          type: string
+          description: especie de la mascota
+        birthDate:
+          type: string
+          description: fecha de nacimiento de la mascota
+      example:
+        name: toby
+        specie: perro
+        birthDate: 12/10/2020

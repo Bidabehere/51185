@@ -1,0 +1,130 @@
+paths:
+  /api/users/:
+    get:
+      summary: Obtener todos los usuarios
+      tags:
+        - Usuarios
+      responses:
+        "200":
+          description: Todos los usuarios fueron obtenidos correctamente
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#components/schemas/User'
+        "401":
+          description: Error por falta de permisos
+        "500":
+          description: Error interno del servidor
+  /api/users/{uid}:
+    get:
+      summary: Obtener un usuario por el id
+      tags:
+        - Usuarios
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          description: uid es el id del usuario que desea obtener
+          schema:
+            $type: string
+      responses:
+        "200":
+          description: Se obtuvo el usuario correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/User'
+        "500":
+          description: Error interno del servidor
+    put:
+      summary: Actualizar el usuario por el id
+      tags:
+        - Usuarios
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          description: uid es el id del usuario que desea actualizar
+          schema:
+            $type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/requestBodies/updateUser'
+      responses:
+        "200":
+          description: Se actualizo el usuario correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#components/schemas/User'
+        "500":
+          description: Error interno del servidor
+    delete:
+      summary: eliminar un usuario por id
+      tags:
+        - Usuarios
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          description: uid es el id del usuario que desea eliminar
+          schema:
+            $type: string
+      responses:
+        "200":
+          description: Se elimino el usuario correctamente
+        "500":
+          description: Error interno del servidor
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: ObjectId
+          description: id del usuario autogenerado por la base de datos
+        first_name:
+          type: string
+          description: nombre del usuario
+        last_name:
+          type: string
+          description: apellido del usuario
+        email:
+          type: string
+          description: correo del usuario, campo unico
+        password:
+          type: string
+          description: contraseña del usuario hasheada
+      example:
+        _id: ObjectId('ahjg7862jahsgd871263')
+        first_name: pepe
+        last_name: suarez
+        email: pepe@gmail.com
+        password: $jkasd981273kjahsd8912
+  requestBodies:
+    updateUser:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: nombre del usuario
+        last_name:
+          type: string
+          description: apellido del usuario
+        email:
+          type: string
+          description: correo del usuario, campo unico
+        password:
+          type: string
+          description: contraseña del usuario
+      example:
+        first_name: pepe
+        last_name: suarez
+        email: pepe@gmail.com
+        password: "1234"

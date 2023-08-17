@@ -1,10 +1,12 @@
 <h2>Pagina de Registro</h2>
-<form method="post" action="/api/sessions/signup">
+<form method="post" action="/api/sessions/signup" enctype="multipart/form-data">
     <input type="text" placeholder="nombre" name="name"/>
     <br/><br/>
     <input type="email" placeholder="correo" name="email"/>
     <br/><br/>
     <input type="password" placeholder="contraseña" name="password"/>
+    <br/><br/>
+    <input type="file" placeholder="Imagen de perfil" name="avatar">
     <br/><br/>
     <button type="submit">registrarse</button>
 </form>

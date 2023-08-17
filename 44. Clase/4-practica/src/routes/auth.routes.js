@@ -1,12 +1,12 @@
 import {Router} from "express";
 import passport from "passport";
 import { sendRecoveryPass } from "../utils/email.js";
-import { generateEmailToken, verifyEmailToken, isValidPassword, createHash } from "../utils.js";
+import { generateEmailToken, verifyEmailToken, isValidPassword, createHash, uploaderProfile } from "../utils.js";
 import { UserModel } from "../daos/models/user.model.js";
 
 const router = Router();
 
-router.post("/signup", passport.authenticate("signupStrategy",{
+router.post("/signup",uploaderProfile.single("avatar"),passport.authenticate("signupStrategy",{
     failureRedirect:"/api/sessions/failure-signup"
 }), (req,res)=>{
     // res.send("registro exitoso")
